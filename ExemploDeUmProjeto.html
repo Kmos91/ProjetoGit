@@ -5,10 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sou uma Página teste</title>
+
+    <script>
+        function funcao1(){
+            var x;
+            var r = confirm("Você é um Robô ? Escolha entre OK ou Cancelar");
+                if(r == true){
+                    x= "Sim, eu sou um Robô !";
+                }
+                else{
+                    x= "Não, eu não sou um Robô !";
+                }
+        document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+
 </head>
 <body>
     <h1>Olá, leia esse texto aqui !</h1>
     <p>Sou um pequeno texto para apenas preencher essa página. Logo serei mais elaborado e bonito !</p>
+    <h2>Dê uma olhada na minha nova função !</h2>
+    <button onclick="funcao1()">Dê um clique aqui !</button>
+    <p id="demo"></p>
     
 </body>
 </html>
